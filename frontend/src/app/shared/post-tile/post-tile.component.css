@@ -1,0 +1,349 @@
+/* .post{
+    --post-line-color: #ccc;    
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.8);
+    color: #878A8C;
+    position: relative;
+    border-radius: 4px;
+    padding:5px;
+}
+
+.btnCommments{
+    border-radius: 2px solid;
+    color: #878A8C;
+    opacity: 1;
+}
+
+.btnCommments:hover{
+    opacity: 0.65;
+    cursor: pointer;
+}
+
+.post-title{
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.posturl, .postname{    
+    color: black;
+}
+
+.subreddit-text{
+    font-weight: bold;
+}
+
+.post-text{
+    margin-top: 10px;
+} */
+
+
+/* =========================
+   Posts Container
+   ========================= */
+
+.post-list {
+  width: 100%;
+}
+
+
+/* =========================
+   Individual Post
+   ========================= */
+
+.post {
+  display: flex;
+  align-items: flex-start;
+
+  width: 100%;
+
+  background: #ffffff;
+  border: 1px solid #edeff1;
+  border-radius: 6px;
+
+  margin-bottom: 16px;
+  padding: 16px;
+
+  transition: border-color 0.15s ease,
+              box-shadow 0.15s ease;
+}
+
+
+/* Slight Reddit-style hover effect */
+
+.post:hover {
+  border-color: #c8c8c8;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   Vote Section
+   ========================= */
+
+.vote-section {
+  width: 45px;
+  min-width: 45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin-right: 14px;
+  padding-top: 2px;
+}
+
+
+/* =========================
+   Post Content
+   ========================= */
+
+.post-content {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* =========================
+   Metadata
+   ========================= */
+
+.subreddit-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 5px;
+
+  color: #787c7e;
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* Subreddit */
+
+.subreddit-text {
+  font-weight: 600;
+}
+
+.posturl {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.posturl:hover {
+  text-decoration: underline;
+}
+
+
+/* Author */
+
+.post-author {
+  color: #787c7e;
+}
+
+.username {
+  color: #0079d3;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.username:hover {
+  text-decoration: underline;
+}
+
+
+/* Duration */
+
+.post-duration {
+  color: #787c7e;
+}
+
+
+/* =========================
+   Dividers
+   ========================= */
+
+.post-content hr {
+  border: 0;
+  border-top: 1px solid #edeff1;
+
+  margin: 11px 0 14px;
+}
+
+
+/* =========================
+   Post Title
+   ========================= */
+
+.post-title {
+  margin-bottom: 10px;
+}
+
+.postname {
+  display: block;
+
+  color: #222222;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  line-height: 1.35;
+
+  text-decoration: none;
+
+  word-break: break-word;
+}
+
+.postname:hover {
+  color: #0079d3;
+}
+
+
+/* =========================
+   Post Description
+   ========================= */
+
+.post-description {
+  margin-bottom: 10px;
+}
+
+.post-text {
+  margin: 0;
+
+  color: #1c1c1c;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  word-break: break-word;
+}
+
+
+/* =========================
+   Post Actions
+   ========================= */
+
+.post-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  min-height: 32px;
+}
+
+
+/* Comments */
+
+.btnCommments {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 6px 10px;
+
+  color: #787c7e;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: background-color 0.15s ease,
+              color 0.15s ease;
+}
+
+.btnCommments:hover {
+  color: #1c1c1c;
+  background-color: #f6f6f6;
+}
+
+
+/* Read Post Button */
+
+.post-actions .login {
+  margin-left: auto;
+
+  padding: 7px 14px;
+
+  border: none;
+  border-radius: 4px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .post {
+    padding: 12px;
+  }
+
+  .vote-section {
+    width: 38px;
+    min-width: 38px;
+
+    margin-right: 10px;
+  }
+
+  .subreddit-info {
+    font-size: 11px;
+  }
+
+  .postname {
+    font-size: 18px;
+  }
+
+  .post-text {
+    font-size: 13px;
+  }
+
+  .post-actions {
+    flex-wrap: wrap;
+  }
+
+  .post-actions .login {
+    margin-left: 0;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .post {
+    padding: 10px;
+  }
+
+  .vote-section {
+    width: 32px;
+    min-width: 32px;
+
+    margin-right: 8px;
+  }
+
+  .postname {
+    font-size: 17px;
+  }
+
+  .post-actions {
+    gap: 6px;
+  }
+}

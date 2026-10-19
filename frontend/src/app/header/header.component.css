@@ -1,0 +1,106 @@
+.navbar {
+    background: rgba(255, 255, 255, 0.94) !important;
+    border-bottom: 1px solid #e7e4ff;
+    box-shadow: 0 4px 18px rgba(43, 36, 93, 0.08);
+    min-height: 64px;
+}
+
+.pulsethread-icon-svg {
+    height: 42px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 42px;
+}
+
+.pulsethread-text {
+    color: #29245c;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    vertical-align: middle;
+}
+
+.logo{
+    text-decoration: none;
+}
+
+.login, .sign-up{    
+    background-color: transparent;
+    border-color: #6d5dfc;
+    color: #5547d9;
+    fill: #6d5dfc;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;  
+}
+
+.sign-up{
+    background-color: #6d5dfc;
+    border-color: #6d5dfc;
+    color: aliceblue;
+}
+
+.sign-up:hover{
+    background-color: #5547d9;
+    border-color: #5547d9;
+}
+
+.userdetails{    
+    background-color: transparent;
+    border-color: #6d5dfc;
+    color: #5547d9;
+    fill: #6d5dfc;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+    border: 0px;
+}
+
+.userdetails:hover{
+    border: 1px solid;
+}
+
+.dropdown-item{
+    background-color: #f8f9fa;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dropdown-item:hover{
+    background-color: #eeeaff;
+}
+
+.dropdown-menu{
+    background-color: #f8f9fa;
+}
+
+.account-icon{
+    border-radius: 4px;
+    float: left;
+    margin-right: 5px;
+    max-height: 24px;
+    max-width: 24px;
+}
