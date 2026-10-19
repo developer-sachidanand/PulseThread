@@ -1,0 +1,21 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: pulsethread-mysql
+    environment:
+      MYSQL_DATABASE: pulsethread
+      MYSQL_USER: sachidanand
+      MYSQL_PASSWORD: pulsethread
+      MYSQL_ROOT_PASSWORD: pulsethread-root
+    ports:
+      - "3306:3306"
+    volumes:
+      - pulsethread-mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-ppulsethread-root"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+volumes:
+  pulsethread-mysql-data:
